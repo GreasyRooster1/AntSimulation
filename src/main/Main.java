@@ -25,6 +25,16 @@ public class Main extends PApplet {
         }
     }
 
+    public Food getNearestFood(float x,float y){
+        float dist = 999999;
+        Food food = null;
+        for(Entity e : entities){
+            if(e instanceof Food){
+                if(dist())
+            }
+        }
+    }
+
     public static void main(String[] passedArgs) {
         String[] appletArgs = new String[] { "main.Main" };
         PApplet.main(appletArgs);
