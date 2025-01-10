@@ -13,6 +13,9 @@ public class Main extends PApplet {
     public void setup() {
         app =this;
         Entity.addEntity(new AntHill(width/2f, height/2f,Team.Red));
+        for(int i=0; i<100; i++) {
+            Entity.addEntity(new Food(50+random(-20,20),50+random(-20,20)));
+        }
     }
 
     public void draw(){
